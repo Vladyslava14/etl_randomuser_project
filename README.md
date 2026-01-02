@@ -1,4 +1,3 @@
-# etl_randomuser_project
 # ETL Pipeline: RandomUser API → PostgreSQL
 
 ## Overview
