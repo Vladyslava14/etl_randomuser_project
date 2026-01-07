@@ -52,7 +52,7 @@ def transform_users(df: pd.DataFrame) -> pd.DataFrame:
     ]
 
     # типізація
-    df["date_of_birth"] = pd.to_datetime(df["date_of_birth"])
+    df["date_of_birth"] = pd.to_datetime(df["date_of_birth"]).dt.date
     df["age"] = df["age"].astype(int)
 
     df["latitude"] = df["latitude"].astype(float)
@@ -63,4 +63,3 @@ def transform_users(df: pd.DataFrame) -> pd.DataFrame:
     df = df.dropna(subset=["country", "city"])
 
     return df
-    print(transform_users)
