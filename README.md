@@ -104,6 +104,20 @@ Note: Cloud components are presented conceptually to demonstrate architectural u
 - ETL orchestration and basic observability
 - Conceptual cloud architecture (AWS S3, Glue, Athena)
 
+---
+
+## Future Extensions (Big Data & Cloud)
+
+This project is designed for small to medium-sized datasets processed on a single machine.  
+For large-scale data processing and enterprise environments, the following extensions are possible:
+
+- The transformation layer could be migrated to **Apache Spark** to enable distributed processing and higher scalability.
+- **Databricks** could be used as a unified analytics platform for collaborative development, job orchestration, and cloud-native data pipelines.
+- **AWS S3** or **Azure Data Lake** could serve as a data lake layer instead of local storage.
+- Workflow orchestration could be extended using tools such as **Apache Airflow** or **AWS Step Functions**.
+
+---
+
 ## Validation
 
 The loaded data and database schema were validated using pgAdmin.
